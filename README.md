@@ -37,21 +37,31 @@ reputational / legal / financial / operational / sentiment dimensions, with extr
 
 ## 📸 Screenshots
 
-| Landing | Analyze / Upload |
-|---------|------------------|
-| ![Landing](screenshots/01_landing.png) | ![Upload](screenshots/02_upload.png) |
+| Landing | Upload a report | Pick a report type |
+|---------|-----------------|--------------------|
+| ![Landing](screenshots/01_landing.png) | ![Upload](screenshots/02_upload.png) | ![Report type](screenshots/03_report_type.png) |
+
+### Live analysis
+
+Entities and claims stream in while the guarded Gemini pipeline runs.
+
+![Analyzing](screenshots/04_analyzing.png)
 
 ### Impact Report dashboard
 
-| Overview & scores | Dimensions & entities |
-|-------------------|-----------------------|
-| ![Report overview](screenshots/03_report_overview.png) | ![Dimensions](screenshots/04_report_dimensions.png) |
+| Overall score & executive summary | Dimensions, radar & entity exposure |
+|-----------------------------------|-------------------------------------|
+| ![Report overview](screenshots/05_report_overview.png) | ![Dimensions](screenshots/06_report_dimensions.png) |
 
-| Claims & timeline | Historical analogs |
-|-------------------|--------------------|
-| ![Claims](screenshots/05_report_claims.png) | ![Analogs](screenshots/06_report_analogs.png) |
+| Extracted claims (page-cited) | Projected timeline & historical analogs |
+|-------------------------------|------------------------------------------|
+| ![Claims](screenshots/07_report_claims.png) | ![Timeline](screenshots/08_report_timeline.png) |
 
-> Screenshots generated from a real analysis of the Hindenburg Research → Adani Group report.
+| Source credibility & disclosed conflicts |
+|------------------------------------------|
+| ![Credibility](screenshots/09_report_credibility.png) |
+
+> Screenshots come from a real analysis of the Hindenburg Research → Adani Group report.
 
 ---
 

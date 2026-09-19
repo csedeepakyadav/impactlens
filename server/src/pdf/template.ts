@@ -229,7 +229,7 @@ export function headerTemplate(): string {
     <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid ${BRAND}; padding-bottom:2mm;">
       <div style="display:flex; align-items:center; gap:6px;">
         <div style="width:14px; height:14px; background:${BRAND}; border-radius:3px;"></div>
-        <span style="font-weight:700; letter-spacing:2px; font-size:8px; color:${INK};">MEDIA IMPACT INTELLIGENCE</span>
+        <span style="font-weight:700; letter-spacing:2px; font-size:8px; color:${INK};">IMPACTLENS</span>
       </div>
       <span style="color:${MUTED}; letter-spacing:1px;">CONFIDENTIAL · AI-GENERATED ANALYSIS</span>
     </div>
