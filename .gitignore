@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+server/uploads/
+server/data/
+server/generated/
+*.log
+.DS_Store
+
+# Local scratch
+screenshots/tmp/

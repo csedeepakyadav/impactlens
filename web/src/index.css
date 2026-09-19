@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #0a0e1a;
+  --color-panel: #101527;
+  --color-line: #232b45;
+  --color-brand: #6366f1;
+  --color-brand-soft: #818cf8;
+  --color-fog: #94a3b8;
+
+  --color-sev-minimal: #2dd4bf;
+  --color-sev-moderate: #fbbf24;
+  --color-sev-high: #fb923c;
+  --color-sev-severe: #f87171;
+  --color-sev-critical: #ef4444;
+
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Menlo, monospace;
+}
+
+html {
+  background: var(--color-ink);
+  color: #e2e8f0;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+::selection {
+  background: #6366f166;
+}
+
+/* Animated mesh-gradient backdrop for hero surfaces */
+.mesh-bg {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 10%, #6366f12e, transparent),
+    radial-gradient(ellipse 50% 40% at 80% 20%, #f8717120, transparent),
+    radial-gradient(ellipse 60% 50% at 60% 90%, #2dd4bf18, transparent);
+  animation: mesh-drift 18s ease-in-out infinite alternate;
+}
+@keyframes mesh-drift {
+  from { background-position: 0% 0%, 0% 0%, 0% 0%; }
+  to { background-position: 40px 20px, -30px 40px, 20px -30px; }
+}
+
+.dot-grid {
+  background-image: radial-gradient(#232b45 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--color-panel) 82%, transparent);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--color-line);
+}
+
+.mono-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Slow gradient shimmer for accent headline text */
+.shimmer-text {
+  background-size: 200% auto;
+  animation: shimmer 6s linear infinite;
+}
+@keyframes shimmer {
+  to { background-position: 200% center; }
+}
